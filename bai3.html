@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, tr {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body >
+<table id="sampleTable" >
+  <tr>
+    <td style="text">Email</td>
+    <td><input style="text" placeholder=""></input>
+    <td style="">Comments</td>
+    <td><input style="text" placeholder=""></input></td>
+  </tr>
+ 
+</table>
+<br>
+
+ 
+<button onclick="myFunction()">Add Row</button>
+
+<script>
+function myFunction() {
+    var html='<tr><td>Email</td><td><input></input></td><td>Comments</td><td><input></input></td></tr>';
+    document.getElementById("sampleTable").innerHTML+=html;
+    
+}
+</script>
+
+</body>
+</html>
+
